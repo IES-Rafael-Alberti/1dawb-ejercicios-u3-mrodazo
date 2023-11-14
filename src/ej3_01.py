@@ -3,16 +3,11 @@ Ejercicio 3.1.1
 Escribir un programa que almacene las asignaturas de un curso (por ejemplo Matemáticas, Física, Química, Historia y Lengua) en una lista y la muestre por pantalla.
 
 """
-
-
-from EjerciciosU2.Ptact2_2.ej2_2_01 import borrarConsola
-
 def mostrar_lista (asignaturas):
     print (" - ".join(asignaturas))
 
 
 def main ():
-    borrarConsola()
     print ("Ejercicio 3.1.1")
     print ("----------------\n")
 

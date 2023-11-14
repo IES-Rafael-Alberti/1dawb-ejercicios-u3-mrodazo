@@ -4,19 +4,17 @@ Escribir un programa que almacene las asignaturas de un curso (por ejemplo Matem
 
 """
 
-
-from EjerciciosU2.Ptact2_2.ej2_2_01 import borrarConsola
-
 def pedir_numero_asignaturas() -> int:
     error = True
     while error:
         try:
-            num = int(input("Introdusca el número de asignaturas: "))
+            num = int(input("Introduzca el número de asignaturas: "))
             if not (1<= num <= 10):
                 raise ValueError
+            error = False
         except ValueError:
             print ("Error")
-
+    return num
 
 def pedir_asignatura (indice: int) -> str:
     return input (f"{indice}. ")
@@ -35,12 +33,11 @@ def mostrar_lista(asignaturas):
 
 
 def main ():
-    borrarConsola()
     print ("Ejercicio 3.1.2")
     print ("----------------\n")
 
     num_asignaturas = pedir_numero_asignaturas()
-    asignaturas = pedir_asignatura(num_asignaturas)
+    asignaturas = crear_asignaturas(num_asignaturas)
     mostrar_lista(asignaturas)
     print ()
 
