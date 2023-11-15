@@ -6,7 +6,7 @@ Se usan 2 listas, una para Asignaturas y otra para Notas
 
 """
 
-from ej3_02 import pedir_numero_asignaturas, crear_asignaturas, mostrar_lista
+from ej3_1_2 import pedir_numero_asignaturas, crear_asignaturas, mostrar_lista
 
 def pedir_notas (num_asignaturas: int) -> list:
     notas = []
