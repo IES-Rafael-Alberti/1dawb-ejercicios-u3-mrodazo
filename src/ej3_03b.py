@@ -4,7 +4,7 @@ Escribir un programa que almacene las asignaturas de un curso (por ejemplo Matem
 
 """
 
-from ej3_02 import mostrar_lista
+from ej3_1_2 import mostrar_lista
 
 
 def pedir_nota (asignaturas: tuple) -> str:
